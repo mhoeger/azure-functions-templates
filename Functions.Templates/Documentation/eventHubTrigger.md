@@ -25,9 +25,9 @@ The settings for an Azure Event Hub trigger specifies the following properties:
 		
 		eventHubMessages.forEach((message, index) => {
 			context.log(`Processed message ${message}`);
-            context.log(`EnqueuedTimeUtc = ${context.bindingData.enqueuedTimeUtcArray[index]}`);
-            context.log('SequenceNumber =', context.bindingData.sequenceNumberArray[index]);
-            context.log('Offset =', context.bindingData.offsetArray[index]);
+			context.log(`EnqueuedTimeUtc = ${context.bindingData.enqueuedTimeUtcArray[index]}`);
+			context.log(`SequenceNumber = ${context.bindingData.sequenceNumberArray[index]}`);
+			context.log(`Offset = ${context.bindingData.offsetArray[index]}`);
 		});
 
 		context.done();
